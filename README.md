@@ -22,7 +22,7 @@ pod 'KLSwift'
 
 ## Author
 
-KL, huikldavid@gmail.com
+KL, me@klhui.hk
 
 ## License
 

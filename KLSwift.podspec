@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'KLSwift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KLSwift.'
+  s.summary          = 'KLSwift supports fast iOS development using pure code.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+KLSwift supports fast iOS development using pure code. Xib / Storyboard is not fully supported.
                        DESC
 
-  s.homepage         = 'https://github.com/KL/KLSwift'
+  s.homepage         = 'https://github.com/klhui97/KLSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'KL' => 'huikldavid@gmail.com' }
-  s.source           = { :git => 'https://github.com/KL/KLSwift.git', :tag => s.version.to_s }
+  s.author           = { 'KL' => 'me@klhui.hk' }
+  s.source           = { :git => 'https://github.com/klhui97/KLSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'KLSwift/Classes/**/*'
+  s.source_files = 'KLSwift/Sources/**/*'
   
   # s.resource_bundles = {
   #   'KLSwift' => ['KLSwift/Assets/*.png']

@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import KLSwift
 
-class ViewController: UIViewController {
+class ViewController: KLViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        safeAreaContentView.backgroundColor = .red
     }
 
     override func didReceiveMemoryWarning() {

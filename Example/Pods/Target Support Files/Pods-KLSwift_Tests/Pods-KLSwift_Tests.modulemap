@@ -1,0 +1,6 @@
+framework module Pods_KLSwift_Tests {
+  umbrella header "Pods-KLSwift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

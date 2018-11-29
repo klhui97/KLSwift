@@ -1,0 +1,6 @@
+framework module KLSwift {
+  umbrella header "KLSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

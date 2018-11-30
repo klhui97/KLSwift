@@ -104,7 +104,6 @@
 		6BFC737921B029FA00B0F7BA /* iOSMessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735221B029F900B0F7BA /* iOSMessageManager.swift */; };
 		6BFC737A21B029FA00B0F7BA /* PaperSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735421B029F900B0F7BA /* PaperSwitch.swift */; };
 		6BFC737B21B029FA00B0F7BA /* LargeTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735521B029F900B0F7BA /* LargeTitleTableViewCell.swift */; };
-		6BFC737C21B029FA00B0F7BA /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735621B029F900B0F7BA /* PaddingTextField.swift */; };
 		6BFC737D21B029FA00B0F7BA /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735721B029F900B0F7BA /* CircleImageView.swift */; };
 		6BFC737E21B029FA00B0F7BA /* KLActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735921B029F900B0F7BA /* KLActivityIndicatorShape.swift */; };
 		6BFC737F21B029FA00B0F7BA /* KLActivityIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFC735A21B029F900B0F7BA /* KLActivityIndicatorType.swift */; };
@@ -378,7 +377,6 @@
 		6BFC735221B029F900B0F7BA /* iOSMessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSMessageManager.swift; sourceTree = "<group>"; };
 		6BFC735421B029F900B0F7BA /* PaperSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperSwitch.swift; sourceTree = "<group>"; };
 		6BFC735521B029F900B0F7BA /* LargeTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeTitleTableViewCell.swift; sourceTree = "<group>"; };
-		6BFC735621B029F900B0F7BA /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		6BFC735721B029F900B0F7BA /* CircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		6BFC735921B029F900B0F7BA /* KLActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		6BFC735A21B029F900B0F7BA /* KLActivityIndicatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KLActivityIndicatorType.swift; sourceTree = "<group>"; };
@@ -959,7 +957,6 @@
 			children = (
 				6BFC735421B029F900B0F7BA /* PaperSwitch.swift */,
 				6BFC735521B029F900B0F7BA /* LargeTitleTableViewCell.swift */,
-				6BFC735621B029F900B0F7BA /* PaddingTextField.swift */,
 				6BFC735721B029F900B0F7BA /* CircleImageView.swift */,
 			);
 			path = View;
@@ -1489,7 +1486,6 @@
 				6BFC737521B029FA00B0F7BA /* KLImageViewController.swift in Sources */,
 				6BFC737421B029FA00B0F7BA /* KLImagePageViewController.swift in Sources */,
 				6BFC737821B029FA00B0F7BA /* KLAlertViewManager.swift in Sources */,
-				6BFC737C21B029FA00B0F7BA /* PaddingTextField.swift in Sources */,
 				6BFC738121B029FA00B0F7BA /* VersionHelper.swift in Sources */,
 				6BFC737921B029FA00B0F7BA /* iOSMessageManager.swift in Sources */,
 				6BFC736321B029FA00B0F7BA /* UIColor.swift in Sources */,

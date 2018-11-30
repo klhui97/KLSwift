@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E33BFDF2472D24570BB21C2 /* KLSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLSwift.podspec; path = ../KLSwift.podspec; sourceTree = "<group>"; };
+		0E33BFDF2472D24570BB21C2 /* KLSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KLSwift.podspec; path = ../KLSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0E6764C097FD2956585158EA /* Pods_KLSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A24A509917E184F2A4F74AE /* Pods-KLSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLSwift_Example/Pods-KLSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3DA7A0BF95B2EDBA940A3EE0 /* Pods-KLSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLSwift_Example/Pods-KLSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };

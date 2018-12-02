@@ -49,4 +49,16 @@ public class ScreenSizeHelper {
             return 0
         }
     }
+    
+    public static var safeAreaTopInset: CGFloat {
+        if let window = UIApplication.shared.keyWindow {
+            if #available(iOS 11.0, *) {
+                return window.safeAreaInsets.top
+            } else {
+                return 0
+            }
+        }else {
+            return 0
+        }
+    }
 }

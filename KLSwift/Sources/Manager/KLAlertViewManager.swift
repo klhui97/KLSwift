@@ -22,6 +22,54 @@ public class KLAlertViewManager {
         
     }
     
+    public func showTopAlert(target targetView: UIView, size: CGSize = CGSize(width: ScreenSizeHelper.screenWidth, height: 54), contentInset: UIEdgeInsets = .zero, text: String, icon: UIImage? = nil, completion:(() -> Void)? = nil){
+        
+        let topInset = ScreenSizeHelper.safeAreaTopInset
+        let initFrame = CGRect(x: 0, y: targetView.frame.origin.y - size.height, width: size.width, height: size.height + topInset)
+        let finalFrame = CGRect(x: 0, y: targetView.frame.origin.y, width: ScreenSizeHelper.screenWidth, height: initFrame.size.height)
+        
+        
+        let smartAlertButton = UIButton(type: .custom)
+        smartAlertButton.setTitle(text, for: UIControlState())
+        smartAlertButton.frame = initFrame
+        if (icon != nil) {
+            smartAlertButton.setImage(icon, for: UIControlState())
+            smartAlertButton.imageEdgeInsets = UIEdgeInsetsMake(0, -6, 0, 6)
+        }
+        smartAlertButton.backgroundColor = backgroundColor
+        smartAlertButton.setTitleColor(textColor, for: UIControlState())
+        smartAlertButton.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 20)
+        smartAlertButton.titleEdgeInsets.top = topInset
+        smartAlertButton.alpha = 0
+        smartAlertButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
+        smartAlertButton.titleLabel?.numberOfLines = 2
+        smartAlertButton.titleLabel?.textAlignment = .center
+        smartAlertButton.titleLabel?.minimumScaleFactor = 12
+        smartAlertButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        animatedView?.removeFromSuperview()
+        animatedView = smartAlertButton
+        targetView.addSubview(smartAlertButton)
+        
+        smartAlertButton.contentEdgeInsets = contentInset
+        
+        UIView.animate(withDuration: slideDuration, delay: 0, options: UIViewAnimationOptions(), animations: {
+            [weak smartAlertButton] in
+            smartAlertButton?.alpha = 1
+            smartAlertButton?.frame = finalFrame
+        }) { [weak smartAlertButton] (completed) in
+            if completed == true {
+                UIView.animate(withDuration: self.slideDuration, delay: self.showDuration, options: UIViewAnimationOptions(), animations: {
+                    [weak smartAlertButton] in
+                    smartAlertButton?.alpha = 0
+                    smartAlertButton?.frame = initFrame
+                }) { [weak smartAlertButton] (completed) in
+                    smartAlertButton?.removeFromSuperview()
+                }
+            }
+        }
+    }
+    
     public func showBottomAlert(target targetView: UIView, size: CGSize = CGSize(width: ScreenSizeHelper.screenWidth, height: 54), text: String, icon: UIImage? = nil, completion:(() -> Void)? = nil){
         
         let bottomInset = ScreenSizeHelper.safeAreaBottomInset
